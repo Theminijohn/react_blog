@@ -22,10 +22,11 @@ class BlogsController < ApplicationController
       flash[:error] = 'Error'
       render json: flash
     end
-  ena
+  end
 
   private
   def blog_params
     params.require(:blog).permit(:name)
   end
+
 end
